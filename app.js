@@ -5,10 +5,10 @@ const outBox = document.querySelector("#out-box");
 
 function compareValues(sum, luckyNumber) {
     if (sum % luckyNumber === 0) {
-        outBox.innerHTML = "   Your birthday is lucky!"
+        outBox.innerHTML = "YAY! Your birthday is lucky!!😍"
     }
     else {
-        outBox.innerHTML = "Your b'day is not lucky"
+        outBox.innerHTML = "Oops!! Your b'day is not lucky!!😌"
     }
 }
 
@@ -18,7 +18,7 @@ function checkBirthDateIsLucky() {
     if(sum&&dob)
     compareValues(sum, luckyNumber.value)
     else
-    outBox.innerHTML = "Both fields are mondatory"
+    outBox.innerHTML = "Please enter the Both the fields"
 }
 
 function calculateSum(dob) {
